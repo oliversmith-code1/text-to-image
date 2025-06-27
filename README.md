@@ -47,7 +47,7 @@ Use the interactive docs at:
 ### 1. Clone & Setup
 
 ```bash
-git clone https://github.com/mahdinet1/text-to-image.git
+git clone https://github.com/oliversmith-code1/text-to-image.git
 cd text-to-image-service
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
