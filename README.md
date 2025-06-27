@@ -1,6 +1,6 @@
 # 🖼️ Text-to-Image Microservice
 
-A scalable microservice built with **FastAPI**, integrated with **OpenAI's image generation API** (or any compatible provider), deployed via **Docker** and **Terraform on GCP**.
+A scalable microservice built with **FastAPI**, integrated with **OpenAI's image generation API** (or any compatible provider), deployed via **Docker** and **Terraform on AWS**.
 This service accepts text prompts and returns generated image URLs.
 
 ---
@@ -11,7 +11,7 @@ This service accepts text prompts and returns generated image URLs.
 * ⚡ Async HTTP calls via `httpx`
 * 🔁 Retry logic with fallback using `tenacity`
 * 📦 Containerized with Docker (multi-stage build)
-* ☁️ Cloud-ready with Terraform for Google Cloud Run
+* ☁️ Cloud-ready with Terraform for AWS 
 * ✅ Unit tested with `pytest`, `httpx`, `tenacity`
 * 🔧 Clean error handling, structured logging-ready
 
@@ -72,11 +72,10 @@ docker run -p 8000:8000 text-to-image-service
 
 ---
 
-## ☁️ GCP Deployment with Terraform
+## ☁️ AWS Deployment with Terraform
 
 ### Prerequisites
 
-* Enable GCP APIs: `run.googleapis.com`, `artifactregistry.googleapis.com`
 * Docker image built & pushed to Artifact Registry
 
 ### Deploy with Terraform
