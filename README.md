@@ -84,7 +84,8 @@ docker run -p 8000:8000 text-to-image-service
 ```bash
 cd deployment/IaC/terraform
 terraform init
-terraform apply -var="project_id=your-gcp-project" -var="image_name=us-central1-docker.pkg.dev/your-project/your-repo/text-to-image:latest"
+terraform plan
+terraform apply 
 ```
 
 After deploy, Terraform will output a live URL like:
