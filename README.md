@@ -91,7 +91,7 @@ terraform apply
 After deploy, Terraform will output a live URL like:
 
 ```text
-cloud_run_url = "https://text-to-image-xyz.a.run.app"
+cloud_run_url = "http://Public IP of the EC2 instance/docs"
 ```
 
 ---
