@@ -1,0 +1,15 @@
+### Generate Image - Valid Prompt
+POST http://127.0.0.1:8000/text-to-img
+Content-Type: application/json
+Accept: application/json
+
+{
+  "text": "a cute robot reading a book"
+}
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 200)
+    })
+%}
+
